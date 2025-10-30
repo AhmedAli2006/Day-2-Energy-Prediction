@@ -1,37 +1,38 @@
-# 🧩 AI Project Template
+# 🏠 Energy Consumption Prediction (AI Project)
 
-A reusable, professional template for ML/AI projects. Clone or use as a GitHub _Template_ to start new projects quickly.
+Predict household energy consumption using environmental and temporal data.
 
-## 📁 Structure
-```
-ai-project-template/
-├── data/            # raw & processed data (kept out of git via .gitignore rules)
-├── models/          # saved models, checkpoints
-├── notebooks/       # Jupyter notebooks
-├── scripts/         # CLI utilities (train/evaluate/etc.)
-├── src/             # reusable modules (feature_eng.py, model.py, etc.)
-├── requirements.txt # project deps
-├── .gitignore
-├── setup_venv.sh    # Linux/macOS setup
-├── setup_venv.ps1   # Windows PowerShell setup
-└── README.md
-```
+## 📘 Overview
+This project builds machine learning models to predict appliance energy usage using temperature, humidity, and time-series data from the UCI "EnergyData Complete" dataset.
 
-## 🚀 Quick start
-**Linux/macOS (or Ubuntu):**
-```bash
-bash setup_venv.sh
-# then
-jupyter notebook
-```
-**Windows PowerShell:**
-```powershell
-.\setup_venv.ps1
-# then
-jupyter notebook
-```
+## 🚀 Features
+- Full Exploratory Data Analysis (EDA)
+- Feature Engineering (Cyclical Time Encoding + Lag Features)
+- Model Comparison:
+  - Linear Regression
+  - Random Forest
+  - XGBoost
+  - LightGBM
+  - CatBoost
+- Tuned CatBoost model achieving **R² = 0.78**
+- Inference script for predicting new sensor readings
 
-## ✍️ Notes
-- The virtual environment (`.venv/`) is **not** committed to git.
-- Update `requirements.txt` as you add libs: `pip freeze --exclude-editable > requirements.txt`.
-- Register your kernel once per project so notebooks pick the right env.
+## 📂 Folder Structure
+Day2EnergyPrediction/
+│
+├── data/
+│   ├── energydata_complete.csv
+│   └── new_data.csv
+│
+├── models/
+│   └── energy_model_catboost.joblib
+│
+├── notebooks/
+│   └── Day2EnergyPrediction.ipynb
+│
+├── scripts/
+│   └── predict_energy.py
+│
+├── requirements.txt
+├── README.md
+└── .gitignore

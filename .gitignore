@@ -1,35 +1,17 @@
 # Python
 __pycache__/
-*.py[cod]
+*.pyc
 *.pyo
 *.pyd
-*.egg-info/
-*.log
-
-# Envs
+*.DS_Store
+.env
 .venv/
-env/
-ENV/
-*.env
-
-# Jupyter
 .ipynb_checkpoints/
-.notebooks_history/
 
-# OS
-.DS_Store
+# Data and models (optional)
+data/*.csv
+!data/sample_data.csv
+models/*.joblib
+
+# OS junk
 Thumbs.db
-
-# Data & models (keep large/binary out of git)
-data/**/*.csv
-data/**/*.parquet
-data/**/*.xlsx
-data/**/*.zip
-data/**/*.json
-data/**/*.pkl
-data/**/*.joblib
-data/**/*.npy
-data/**/*.npz
-models/**
-!models/.gitkeep
-data/.gitkeep

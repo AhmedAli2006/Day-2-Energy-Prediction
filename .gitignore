@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.log
+
+# Envs
+.venv/
+env/
+ENV/
+*.env
+
+# Jupyter
+.ipynb_checkpoints/
+.notebooks_history/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data & models (keep large/binary out of git)
+data/**/*.csv
+data/**/*.parquet
+data/**/*.xlsx
+data/**/*.zip
+data/**/*.json
+data/**/*.pkl
+data/**/*.joblib
+data/**/*.npy
+data/**/*.npz
+models/**
+!models/.gitkeep
+data/.gitkeep

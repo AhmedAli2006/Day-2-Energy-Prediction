@@ -18,7 +18,8 @@ This project builds machine learning models to predict appliance energy usage us
 - Inference script for predicting new sensor readings
 
 ## 📂 Folder Structure
-```Day-2-Energy-Prediction/
+```
+Day-2-Energy-Prediction/
 │
 ├── data/
 │   ├── energydata_complete.csv
